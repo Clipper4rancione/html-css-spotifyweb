@@ -6,48 +6,84 @@
 
 /* GENERAL */
 body{
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
+}
+main::before{
+    content: '';
+    display: block;
+    height: 75px;
+    margin: ('' '' '') 0 0;
+}
+aside::before{
+    content: '';
+    display: block;
+    height: 75px;
+    margin: ('' '' '') 0 0;
 }
 .container{
     width: 90%;
     margin: 0 auto;
 }
+
 .title-row{
+    font-size: 1.7rem;
     color: white;
+    margin-bottom: 10px;
+}
+.grey-span{
+    font-weight: 600;
+    font-size: .8rem;
+    color: #717171;
 }
 
 /* HEADER */
 
 
 header{
-    /* position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     height: 75px;
     width: 100%;
+    z-index: 999;
+    
 
+    color:white;
+    background-color: rgba(0, 0, 0, 0.349);
+    
+}
+header .logo {
+    width: 9%;
+}
+
+/* ASIDE BAR */
+
+aside.side-bar{
+    float: left;
+    width: 10%;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
     /* DEBUG */
-
-    background-color: grey;
+    background-color: black;
+}
+aside ul{
+    list-style: none;
+    line-height: 35px;
 }
 
 /* MAIN */
 
-section.side-bar{
-    float: left;
-    width: 10%;
-    color: white;
-    /* DEBUG */
-    background-color: black;
-}
+
 
 section.main-body{
     width: 90%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 165px);
     overflow: auto;
 
     background-color: #141922;
@@ -69,6 +105,7 @@ section.main-body{
 }
 
 /* ALBUM BOXES */
+
 section.albums .container{
     display: flex;
     flex-direction: column;
@@ -77,9 +114,11 @@ section.albums .container{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 40px;
 }
+
 .album-box{
-    width: calc(100% / 7);
+    width: calc(100% / 6);
     text-align: center;
     margin: 20px 20px 10px 0px;
 }
@@ -94,9 +133,7 @@ section.albums .container{
     color: white;
     font-weight: bold;
 }
-.grey-span{
-    color: #717171;
-}
+
 
 
 /* FOOTER */
