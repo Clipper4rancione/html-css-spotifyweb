@@ -6,8 +6,10 @@
 
 /* GENERAL */
 body{
-    background-color: black;
+    
     font-family: 'Montserrat', sans-serif;
+    /* DEBU COLOR */
+    background-color: #141922;;
 }
 main::before{
     content: '';
@@ -15,19 +17,14 @@ main::before{
     height: 75px;
     margin: ('' '' '') 0 0;
 }
-aside::before{
-    content: '';
-    display: block;
-    height: 75px;
-    margin: ('' '' '') 0 0;
-}
 .container{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .title-row{
     font-size: 1.7rem;
+    font-weight: 800;
     color: white;
     margin-bottom: 10px;
 }
@@ -62,19 +59,46 @@ header .logo {
 }
 
 /* ASIDE BAR */
+aside.side-bar .container{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
 
-aside.side-bar{
+}
+aside{
+    display: flex;
+    flex-direction: column;
     float: left;
     width: 10%;
+    height: calc(100vh - 90px);
     padding: 20px;
     color: white;
-    margin-top: 20px;
-    /* DEBUG */
     background-color: black;
+}
+
+
+aside h2{
+    font-size: .9rem;
+    text-transform: uppercase;
 }
 aside ul{
     list-style: none;
     line-height: 35px;
+    overflow: auto;
+}
+aside ul li a{
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #717171;
+}
+.aside-bottom-section{
+    /* DA TOGLIERE MARGIN */
+    margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+   
+   
 }
 
 /* MAIN */
@@ -116,15 +140,24 @@ section.albums .container{
     width: 100%;
     margin-bottom: 40px;
 }
-
-.album-box{
+.col{
+    margin-top: 40px;
     width: calc(100% / 6);
-    text-align: center;
-    margin: 20px 20px 10px 0px;
+    padding-right: 20px;
 }
+.album-box{
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
 .album-box .img-box{
     width: 100%;
 }
+.img-box.radio img{
+    border-radius: 50%;
+}
+
 .album-box img{
     width: 100%;
 }
