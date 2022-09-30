@@ -55,10 +55,12 @@ header{
     
 }
 header .logo {
-    width: 9%;
+    width: 150px;
 }
 
 /* ASIDE BAR */
+
+
 aside.side-bar .container{
     margin-top: 65px;
     display: flex;
@@ -66,6 +68,7 @@ aside.side-bar .container{
 
 }
 aside{
+    position: relative;
     display: flex;
     flex-direction: column;
     float: left;
@@ -75,7 +78,10 @@ aside{
     color: white;
     background-color: black;
 }
-
+aside section.playlist{
+    height: calc(100vh - 200px);
+    overflow: auto;
+}
 
 aside h2{
     font-size: .9rem;
@@ -84,7 +90,6 @@ aside h2{
 aside ul{
     list-style: none;
     line-height: 35px;
-    overflow: auto;
 }
 aside ul li a{
     text-decoration: none;
@@ -92,13 +97,14 @@ aside ul li a{
     font-weight: 600;
     color: #717171;
 }
-.aside-bottom-section{
-    /* DA TOGLIERE MARGIN */
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-   
-   
+ .aside-bottom-section{
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+}
+.aside-bottom-section .cta-download{
+    margin: 5px 0px;
 }
 
 /* MAIN */
