@@ -33,6 +33,9 @@ main::before{
     font-size: .8rem;
     color: #717171;
 }
+.white{
+    color: white;
+}
 
 /* HEADER */
 
@@ -180,4 +183,77 @@ section.albums .container{
 footer{
     height: 90px;
     background-color: #282828;
+}
+
+footer .container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer .left-container{
+    display: flex;
+    align-items: center;
+}
+
+footer .left-container .player-actions{
+    margin-left: 40px;
+    color: #717171;
+    display: flex;
+}
+footer .left-container i{
+    margin-right: 20px;
+}
+
+footer .left-container img{
+    width: 56px;
+    height: 56px;
+    margin-right: 15px;
+}
+
+/* PROGRESS BAR */
+.progress-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.control-container i{
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+.control-container i.fa-circle-play{
+    font-size: 1.7rem;
+}
+.progress-bar-container span{
+    color: white;
+    font-size: .6rem;
+    font-weight: 800;
+    margin: 0px 20px;
+}
+.progress-bar{
+    width: 430px;
+    height: 5px;
+    background-color: #5A5A5A;
+    border-radius: 3px;
+}
+
+.right-container{
+    display: flex;
+    align-items: center;
+}
+.progress-bar.volume{
+    width: 120px;
+}
+.right-control-container i{
+    color: #717171;
+    margin-right: 10px;
 }
