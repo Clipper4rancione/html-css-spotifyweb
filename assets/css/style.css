@@ -5,6 +5,7 @@
 }
 
 /* GENERAL */
+
 body{
     
     font-family: 'Montserrat', sans-serif;
@@ -93,6 +94,13 @@ aside section.playlist{
     height: calc(100vh - 20px);
     overflow: auto;
 }
+section.playlist ul li:first-child::before{
+    font-family: 'Font Awesome 6 Free';
+    content: '\f0fe';
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 30px;
+}
 
 aside h2{
     font-size: .9rem;
@@ -108,6 +116,15 @@ aside ul li a{
     font-size: .8rem;
     font-weight: 600;
     color: #717171;
+}
+aside ul li a:hover{
+    color: white;
+}
+aside ul li a svg{
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    align-items: center;
 }
  .aside-bottom-section{
     width: 100%;
@@ -143,7 +160,9 @@ section.main-body{
 }
 .main-body nav ul li a{
     text-decoration: none;
-    color: white;
+    color: #717171;
+    font-size: .9rem;
+    font-weight: 800;
 }
 
 /* ALBUM BOXES */
@@ -240,12 +259,6 @@ footer .left-container img{
     margin-right: 15px;
 }
 
-/* PROGRESS BAR */
-.progress-bar-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .control-container{
     display: flex;
     justify-content: center;
@@ -260,6 +273,22 @@ footer .left-container img{
     font-size: 1.7rem;
     
 }
+.right-container{
+    display: flex;
+    align-items: center;
+}
+.right-control-container i{
+    color: #717171;
+    margin-right: 10px;
+}
+
+/* PROGRESS BAR */
+
+.progress-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .progress-bar-container span{
     color: white;
     font-size: .6rem;
@@ -272,15 +301,6 @@ footer .left-container img{
     background-color: #5A5A5A;
     border-radius: 3px;
 }
-
-.right-container{
-    display: flex;
-    align-items: center;
-}
 .progress-bar.volume{
     width: 120px;
-}
-.right-control-container i{
-    color: #717171;
-    margin-right: 10px;
 }
